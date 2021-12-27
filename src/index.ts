@@ -15,7 +15,6 @@ import * as serverHttp from '@bett3r-dev/server-http';
 import * as serverLogger from '@bett3r-dev/server-logger';
 import * as serverWebsocket from '@bett3r-dev/server-websocket';
 
-
 start({ 
   providers:{
     database:{
