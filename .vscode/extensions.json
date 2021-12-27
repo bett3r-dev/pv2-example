@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "fabiospampinato.vscode-todo-plus",
+    "github.vscode-pull-request-github",
+    "humao.rest-client",
+    "lcsalt.bett3r-icons",
+    "mhutchie.git-graph",
+    "tomasruizr.bett3r-snippets",
+    "wayou.vscode-todo-highlight"
+  ]
+}
