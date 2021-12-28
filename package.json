@@ -9,7 +9,7 @@
     "prebuild": "yarn clean",
     "build": "tsc -p tsconfig.build.json && mkdir ./build/config && cp src/config/default.yaml ./build/config/",
     "build:local": "tsc -p tsconfig.local.json",
-    "start": "ts-node src/index.ts",
+    "start": "ts-node-dev --trace-warnings --inspect=9229 --transpile-only --respawn -r tsconfig-paths/register src/index.ts",
     "test": "jest"
   },
   "devDependencies": {
