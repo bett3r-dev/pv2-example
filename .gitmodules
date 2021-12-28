@@ -1,3 +1,6 @@
 [submodule "src/services"]
 	path = src/services
 	url = git@github.com:bett3r-dev/pv2-example-services.git
+[submodule "src/domain"]
+	path = src/domain
+	url = git@github.com:bett3r-dev/pv2-template-domain.git

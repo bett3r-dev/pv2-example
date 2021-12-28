@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "build",
+    "src/domain"
+    // "src/**/*.test.ts"
+  ],
+  "compilerOptions": {
+    "paths": {}
+  }
+
+}

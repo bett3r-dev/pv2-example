@@ -18,7 +18,9 @@
     "noImplicitThis": false,
     "alwaysStrict": false,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@bett3r-dev/pv2-example-domain": ["src/domain/src"]
+    },
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
@@ -32,12 +34,4 @@
   "include": [
     "src",
   ],
-  "exclude": [
-    "node_modules",
-    "**/build/*",
-    "**/__mocks__/*.ts",
-    "**/fixtures/*",
-    "**/*.spec.ts",
-    "**/*.test.ts",
-  ]
 }

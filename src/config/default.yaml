@@ -1,0 +1,41 @@
+config:
+  useEnv: true
+eventsourcing:
+  eventstore: mongo
+  pubsub: memory
+http:
+  port: 1984
+instance:
+  provider: local
+logger:
+  logLevels:
+    - debug
+    - log
+    - warn
+    - error
+    - silly
+providers:
+  database:
+    mongo:
+      instances:
+        - connectionString: mongodb://localhost:27001,localhost:27002,localhost:27003/db
+          dbName: pv2-example
+          name: default
+          options:
+            useNewUrlParser: true
+            useUnifiedTopology: true
+  eventstore:
+    eventstoredb:
+      connectionString: >-
+        esdb://localhost:2113?tls=false&keepAliveInterval=10000&keepAliveTimeout=8000
+    mongo:
+      instance: default
+      collection: mongo-store
+  pubsub:
+    eventstoredb:
+      connectionString: >-
+        esdb://localhost:2113?tls=false&keepAliveInterval=10000&keepAliveTimeout=8000
+services: {}
+webSocket:
+  pingIntervalMs: 10000
+  socketUpgradeRoute: /socket-connect

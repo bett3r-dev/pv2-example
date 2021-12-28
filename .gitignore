@@ -45,9 +45,9 @@ db.json
 dist
 
 #config
-config
-!config/default.yaml
-!config/test.json
+src/config/*
+!src/config/default.yaml
+!src/config/test.yaml
 
 #zips
 *.zip

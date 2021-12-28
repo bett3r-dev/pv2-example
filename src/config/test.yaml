@@ -1,0 +1,23 @@
+eventsourcing:
+  eventstore: memory
+  pubsub: memory
+http:
+  port:
+providers:
+  database:
+    mongo:
+      instances:
+        - connectionString: mongodb://localhost:27001,localhost:27002,localhost:27003/db
+          dbName: pv2-template
+          name: default
+          options:
+            useNewUrlParser: true
+            useUnifiedTopology: true
+  eventstore:
+    eventstoredb:
+      enabled: false
+    mongo:
+      enabled: false
+  pubsub:
+    eventstoredb:
+      enabled: false

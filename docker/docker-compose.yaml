@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  example:
+    image: bett3r-dev-pv2-example 
+    ports:
+      - 1984:1984
+    environment:
+      - PROVIDERS_DATABASE_MONGO_INSTANCES_0_CONNECTION_STRING=mongodb://docker.for.mac.localhost:27001,docker.for.mac.localhost:27002,docker.for.mac.localhost:27003/db
+    command: node index.js
