@@ -8,6 +8,7 @@
     "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
     "prebuild": "yarn clean",
     "build": "tsc -p tsconfig.build.json && mkdir ./build/config && cp src/config/default.yaml ./build/config/",
+    "build:docker": "yarn build && docker build -t $npm_package_name .",
     "build:local": "tsc -p tsconfig.local.json",
     "start": "ts-node-dev --trace-warnings --inspect=9229 --transpile-only --respawn -r tsconfig-paths/register src/index.ts",
     "test": "jest"
